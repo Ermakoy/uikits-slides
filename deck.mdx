@@ -1,4 +1,6 @@
-import { Head } from 'mdx-deck'
+import { Head, Image, Appear } from 'mdx-deck';
+import { FullScreenCode, Invert } from 'mdx-deck/layouts';
+export { dark as theme } from 'mdx-deck/themes';
 
 <Head>
   <title>UI kits</title>
@@ -18,4 +20,56 @@ To create your presentation
 
 ---
 
-<https://github.com/jxnblk/mdx-deck>
+<Image
+  size="75vw"
+  src="https://media.giphy.com/media/yYSSBtDgbbRzq/giphy.gif"
+/>
+
+---
+
+<ul>
+  <Appear>
+    <li>Styled Components 💅</li>
+    <li>Styled-system</li>
+    <li>Three</li>
+  </Appear>
+</ul>
+
+---
+
+## Темизация
+
+---
+
+import { CodeSurfer } from 'mdx-deck-code-surfer';
+
+<CodeSurfer
+  dark
+  code={require('!raw-loader!./snippets/themeProps.jsx')}
+  showNumbers={false}
+  steps={[
+    { notes: 'Start with this note' },
+    { range: [1, 2], notes: 'Note for the first step' },
+    { range: [5, 9] },
+    { tokens: { 9: [3, 4, 5] }, notes: 'Note for the third step' }
+  ]}
+/>
+
+---
+
+## Документация
+
+---
+
+<CodeSurfer
+  dark
+  code={require('!raw-loader!./snippets/mdExample.mdx')}
+  lang={'markdown'}
+  showNumbers={false}
+  steps={[
+    { notes: 'Start with this note' },
+    { range: [1, 2], notes: 'Note for the first step' },
+    { range: [5, 9] },
+    { tokens: { 9: [3, 4, 5] }, notes: 'Note for the third step' }
+  ]}
+/>
