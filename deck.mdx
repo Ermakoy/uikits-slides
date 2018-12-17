@@ -1,16 +1,51 @@
 import { Head, Image, Appear } from 'mdx-deck';
-import { FullScreenCode, Invert } from 'mdx-deck/layouts';
+import { Invert, Split } from 'mdx-deck/layouts';
 export { dark as theme } from 'mdx-deck/themes';
 
 <Head>
   <title>UI kits</title>
 </Head>
 
+export default Invert;
+
+# UI Kit'ы для бизнеса
+
+---
+
+export default Split;
+
+<div>
+
+## Брендбук
+
+Брендбук — стратегический документ для менеджмента компании.
+Создаётся на основе исследований и платформы бренда.
+Описывает его атрибуты и управленческую идеологию.
+Содержит портрет целевой аудитории, позиционирование и стратегию.
+
+</div>
+
+<div>
+
+## Гайдбук
+
+Руководство для маркетологов и дизайнеров.
+Гайдбук описывает системные принципы использования фирменного стиля, цветов, шрифтовых гарнитур
+и стилеобразующих графических элементов.
+
+</div>
+
+---
+
 # UI Kit'ы для разработчиков
 
 ---
 
 ## Что индустрия может предложить?
+
+---
+
+## Примеры 🏄‍♂️
 
 ---
 
@@ -38,6 +73,10 @@ Atlas от Atlassian
 
 ---
 
+## Опыт 👷‍♂️
+
+---
+
 <Image size="67vh" src="./assets/horse.jpeg" />
 
 ---
@@ -53,13 +92,13 @@ Atlas от Atlassian
   <Appear>
     <li>Styled Components 💅</li>
     <li>Styled-system</li>
-    <li>Three</li>
+    <li>Docz</li>
   </Appear>
 </ul>
 
 ---
 
-## Темизация
+## Темизация 👩‍🎨
 
 ---
 
@@ -67,17 +106,30 @@ import { CodeSurfer } from 'mdx-deck-code-surfer';
 
 <CodeSurfer
   dark
-  code={require('!raw-loader!./snippets/themeProps.jsx')}
   showNumbers={false}
-  steps={[
-    { range: [1, 20], notes: 'Start with this note' },
-    { range: [22, 32], notes: 'Note for the first step' }
-  ]}
+  title="styled-system"
+  code={require('!raw-loader!./snippets/themeProps.jsx')}
+  steps={[{ range: [1, 20] }, { range: [22, 32] }]}
 />
 
 ---
 
-## Документация
+## Всё и сразу? 🤔
+
+---
+
+## Smooth-UI
+
+<ul>
+  <Appear>
+    <li>Встроенный styled-system</li>
+    <li></li>
+    <li>Docz</li>
+  </Appear>
+</ul>
+---
+
+## Документация 📖
 
 ---
 
