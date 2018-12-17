@@ -1,6 +1,8 @@
 import { Head, Image, Appear } from 'mdx-deck';
-import { Invert, Split } from 'mdx-deck/layouts';
+import { Invert } from 'mdx-deck/layouts';
 export { dark as theme } from 'mdx-deck/themes';
+import { Text } from './components.jsx';
+import { CodeSurfer } from 'mdx-deck-code-surfer';
 
 <Head>
   <title>UI kits</title>
@@ -8,46 +10,17 @@ export { dark as theme } from 'mdx-deck/themes';
 
 export default Invert;
 
-# UI Kit'ы для бизнеса
-
----
-
-export default Split;
-
-<div>
-
-## Брендбук
-
-Брендбук — стратегический документ для менеджмента компании.
-Создаётся на основе исследований и платформы бренда.
-Описывает его атрибуты и управленческую идеологию.
-Содержит портрет целевой аудитории, позиционирование и стратегию.
-
-</div>
-
-<div>
-
-## Гайдбук
-
-Руководство для маркетологов и дизайнеров.
-Гайдбук описывает системные принципы использования фирменного стиля, цветов, шрифтовых гарнитур
-и стилеобразующих графических элементов.
-
-</div>
-
----
-
 # UI Kit'ы для разработчиков
 
 ---
 
-## Что индустрия может предложить?
-
----
+export default Invert;
 
 ## Примеры 🏄‍♂️
 
 ---
+
+export default Invert;
 
 <Image src="./assets/alfaExample.png" />
 
@@ -57,6 +30,8 @@ feather от Альфа-банка
 
 ---
 
+export default Invert;
+
 <Image src="./assets/ramblerExample.png" />
 
 ```notes
@@ -64,6 +39,8 @@ Ratio от Rambler
 ```
 
 ---
+
+export default Invert;
 
 <Image src="./assets/atlasExample.png" />
 
@@ -73,13 +50,19 @@ Atlas от Atlassian
 
 ---
 
+export default Invert;
+
 ## Опыт 👷‍♂️
 
 ---
 
+export default Invert;
+
 <Image size="67vh" src="./assets/horse.jpeg" />
 
 ---
+
+export default Invert;
 
 <Image
   size="75vw"
@@ -87,6 +70,8 @@ Atlas от Atlassian
 />
 
 ---
+
+export default Invert;
 
 <ul>
   <Appear>
@@ -98,11 +83,13 @@ Atlas от Atlassian
 
 ---
 
+export default Invert;
+
 ## Темизация 👩‍🎨
 
 ---
 
-import { CodeSurfer } from 'mdx-deck-code-surfer';
+export default Invert;
 
 <CodeSurfer
   dark
@@ -114,24 +101,33 @@ import { CodeSurfer } from 'mdx-deck-code-surfer';
 
 ---
 
+export default Invert;
+
 ## Всё и сразу? 🤔
 
 ---
+
+export default Invert;
 
 ## Smooth-UI
 
 <ul>
   <Appear>
     <li>Встроенный styled-system</li>
-    <li></li>
+    <li>12-колоночная система</li>
     <li>Docz</li>
   </Appear>
 </ul>
+
 ---
+
+export default Invert;
 
 ## Документация 📖
 
 ---
+
+export default Invert;
 
 <CodeSurfer
   dark
@@ -140,8 +136,30 @@ import { CodeSurfer } from 'mdx-deck-code-surfer';
   showNumbers={false}
   steps={[
     { notes: 'Start with this note' },
-    { range: [1, 2], notes: 'Note for the first step' },
+    { range: [1], notes: 'Note for the first step' },
     { range: [5, 9] },
     { tokens: { 9: [3, 4, 5] }, notes: 'Note for the third step' }
   ]}
 />
+
+---
+
+export default Invert;
+
+<Image size="85vw" src="./assets/mdxExample.png" />
+
+---
+
+export default Invert;
+
+Сотрудники нашего отдела разработки не дают коду превратиться в легаси, и используют новые технологии, даже не успевшие стать мейнстримом.
+
+---
+
+export default Invert;
+
+<Image size="60vh" src="./assets/qr-code.svg" />
+```notes
+Материалы
+```
+---
