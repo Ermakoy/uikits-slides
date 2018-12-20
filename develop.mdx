@@ -75,6 +75,14 @@ export default Invert;
 
 ---
 
+<Image size="110vh" src="./assets/separation-of-concerns.jpg" />
+
+```notes
+Вот уже второй десяток лет мы привыкли что DOM элементы - это про одно, а стили про другое, но так ли это? На самом деле одно не может существовать без другого. Даже на странице с полным отсутствием стилей у элементов они присутствуют по умолчанию (что-то можно увидеть в shadow-DOM). Вам не кажется странным классическое написание <button class="btn"...? Зачем иметь две сущности: элемент button и набор стилей в классе .btn - если они могут существовать только вместе? При этом для управления состоянием (атрибутов и стилей) кнопки мы используем третью сущность в виде каких-то обработчиков на JS. Разве это не странно?
+```
+
+---
+
 <Image size="100vh" src="./assets/hypeCycle.jpg" />
 
 ---
@@ -99,7 +107,7 @@ export default Invert;
   <Appear>
     <li>Styled Components 💅</li>
     <li>Styled-system</li>
-    <li>Docz</li>
+    <li>Storybook</li>
   </Appear>
 </ul>
 
@@ -123,9 +131,19 @@ export default Invert;
 
 ---
 
+<Image size="125vh" src="./assets/storybook.png" />
+
+---
+
 export default Invert;
 
 ## Всё и сразу? 🤔
+
+---
+
+export default Invert;
+
+<Image size="90vh" src="./assets/smoothUI.png" />
 
 ---
 
@@ -135,7 +153,7 @@ export default Invert;
 
 <ul>
   <Appear>
-    <li>Встроенная темизация</li>
+    <li>Встроенная styled-system</li>
     <li>12-колоночная система</li>
     <li>Построено на styled-components</li>
   </Appear>
@@ -151,16 +169,22 @@ export default Invert;
 
 export default Invert;
 
+<Image size="90vh" src="./assets/docz.png" />
+
+---
+
+export default Invert;
+
 <CodeSurfer
   dark
   code={require('!raw-loader!./snippets/mdExample.mdx')}
   lang={'markdown'}
   showNumbers={false}
   steps={[
-    { notes: 'Start with this note' },
-    { range: [1], notes: 'Note for the first step' },
-    { range: [5, 9] },
-    { tokens: { 9: [3, 4, 5] }, notes: 'Note for the third step' }
+    { range: [1] },
+    { range: [3, 4] },
+    { range: [6, 8] },
+    { range: [10, 15] }
   ]}
 />
 
@@ -185,5 +209,3 @@ export default Invert;
 ```notes
 Материалы презентации в Gist'е
 ```
-
----
